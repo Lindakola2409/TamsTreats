@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="baking treats">
+	<meta name="keywords" content="HTML,CSS,Baking,tams_treatsss,linda,tams,macarons,cakes,cupcakes,cookies">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cutive&family=Oooh+Baby&family=Ribeye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" />
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+	<title> Tam's Treats | Themed Treats </title>
+	<style>
+        .pastel_blue_background{
+            background-color: #D4F0F7;
+            padding: 5px 0px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .pastel_pink_background{
+            background-color: #F6DAE4;
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px;
+        }
+        .pastel_orange_background{
+            background-color: #FFDFBE;
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .pastel_purple_background{
+            background-color: #D0D5F7;
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .pastel_yellow_background{
+            background-color: #FFFFB1;
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .pastel_tropicalblue_background{
+            background-color: #B8CFEC;
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .pastel_green_background{
+            background-color: #DEFDE0;
+            padding: 5px 0px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        .brown{
+            background-color: #C6AB80; 
+            padding: 30px 0px 30px 10px;
+            border-radius: 20px;
+            width: 396px; 
+        }
+        #container 
+        {
+            width: 1280px;
+        }
+		#container h2{
+			font-family: 'Ribeye', cursive;
+			margin: 0px;
+			font-size: 20px;
+			text-align: center;
+		}
+		#container p{
+			font-family: 'Cutive', serif;
+			margin: 0px 10px;
+            font-size: 10px;
+		}
+		#container img{
+			margin: 0px auto;
+		}
+		.text_center{
+			text-align: center;
+		}
+		.floatleft{
+			float: left;
+			width: auto;
+			text-align: center;
+			margin: 0px 5px;
+		}
+		a{
+			color: black;
+			text-decoration: none;
+		}
+		.gif{
+			margin: 0px auto;
+			border-radius: 20px;
+		}
+		.thumbnail_horizontal{
+			width: 180px; 
+			height: auto;
+			float: left;
+            margin: 0px 5px;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+		.floatleft{
+			width: 670px;
+		}
+		.thumbnail_large_horizontal{
+			width: 380px; 
+			height: auto;
+			float: left;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 20px;
+
+		}
+		.thumbnail_horizontal_third{
+			width: 130px; 
+			height: auto;
+			float: left;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+		.floatleft_third{
+			float: left;
+			width: 130px;
+			text-align: center;
+			margin: 0px 10px;
+		}
+		.thumbnail_large_vertical_4_6{
+			width: 900px; 
+			height: 1090px;
+			float: left;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 20px;
+
+		}
+		.thumbnail_square_collage{
+			width: 290px; 
+			height: 290px;
+			float: left;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+		body{
+			text-align: center;
+		}
+		@media(max-width: 767px){
+			.left{float: none;}
+			.right{float: none;}
+			#container, #body, #footer,.left,.right{width: auto;}
+			strong{font-size: 10px;padding: 5px;}
+
+		}
+        #logo{
+            width: 50px;
+            height: auto;
+        }
+        #nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #nav li{
+            float: right;
+            text-align: center;
+            line-height: 25px;
+            font-size: 25px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bold;
+            display: inline;
+        }
+        #nav li:hover{
+            color: #D0D5F7;
+        }
+        #nav a{
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+        #nav li a{
+            display: block;
+            padding: 8px;
+        }
+        #nav ul ul{
+            visibility: hidden;
+            position: absolute;
+            width: 185px;
+            background-color: white;
+        }
+        #nav li:hover > ul{
+            visibility: visible;
+        }
+        #nav{
+            width: 1400px;
+            margin: 0px auto;
+            z-index:1;
+            position:relative;
+        }
+        #nav a:hover{
+            color: #D0D5F7;
+
+        }
+        #nav .active{
+            color: #80cef4;
+        }
+        .brand{
+            margin: 0px;
+            font-size: 25px;
+            font-family: 'Ribeye', cursive;
+            float: left;
+        }
+        #header h2{
+            margin: 50px 0px;
+            font-size: 25px;
+            font-family: 'Work Sans', sans-serif;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        #container > div {
+            font-size: 30px;
+        }
+        @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            } 
+        }
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<div id="nav">
+            <img id="logo" class ="floatleft" src="img/logo.png" alt="logo">
+            <div class="brand"><a href="index.html"> Tam's Treats </a> </div>
+			<ul>
+				<li><a href="about_me.html">About Me </a> <li>
+                <li><a href="cupcakes.html" class="active"> Themed Treats </a>
+                    <ul>
+                        <li><a href="index.html#about">Cupcakes</a></li>
+                        <li><a href="index.html#sypnosis">Sugar Cookies</a></li>
+                        <li><a href="index.html#production">Cake Pops</a></li>
+                    </ul>
+                </li>
+                <li><a href="breads.html">Breads</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+				<li> <a href="macarons.html">Macarons</a></li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div> 
+		<h2> Themed Treats </h2>
+		<!-- <p> <a href="macarons.html">Macarons</a> | <a href="cakes.html">Cakes</a> | <a href="breads.html"> Breads</a> | <a class="active" href="cupcakes.html"> Themed Treats </a> | <a href="about_me.html">About Me</a></p>-->
+	</div>
+	<div id="container">
+		<!--Tropical Theme-->
+		<div class="pastel_green_background">
+			<h2>Tropical Theme</h2>
+			<h2>Sugar Cookies</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/Bridal_Shower_Sugar_Cookeis_Cover.JPG" data-lightbox="tropical_cookies">
+					<img class="portrait" src="cupcakes/img/Bridal_Shower_Sugar_Cookeis_Cover.JPG" alt="sugar_cookie_main">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal_third">
+				<a href="cupcakes/img/Bridal_Shower_Cookies.JPG" data-lightbox="tropical_cookies">
+					<img class="portrait" src="cupcakes/img/Bridal_Shower_Cookies.JPG" alt="Bridal_Shower_Cookies">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal_third">
+				<a href="cupcakes/img/Hawaiian_Sugar_Cookies.JPG" data-lightbox="tropical_cookies">
+					<img class="portrait" src="cupcakes/img/Hawaiian_Sugar_Cookies.JPG" alt="Hawaiian_Sugar_Cookies.JPG">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal_third">
+				<a href="cupcakes/img/Tropical_Bridal_Shower_Cookies.JPG" data-lightbox="tropical_cookies">
+					<img class="portrait" src="cupcakes/img/Tropical_Bridal_Shower_Cookies.JPG" alt="Tropical_Bridal_Shower_Cookies">
+				</a>
+				</div>
+			</div>
+
+			<div class="clearfloat"></div>
+
+			<div class="floatleft_third"><p>Rings and Bride to Be</p></div>
+			<div class="floatleft_third"><p>Tropical Flowers and Pineapples</p></div>
+			<div class="floatleft_third"><p>Leaf and Heart</p></div>
+
+			<div class="clearfloat"></div>
+			
+		</div>
+		<div class="break"></div>
+		<!--Alice in Wonderland Theme-->
+		<div class="pastel_blue_background">
+			<h2>Alice in Wonderland</h2>
+			<h2>Sugar Cookies</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/Alice_in_wonderland_cover.jpg" data-lightbox="Alice">
+					<img class="portrait" src="cupcakes/img/Alice_in_wonderland_cover.jpg" alt="Alice_in_wonderland_cover">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/alice_in_wonderland_cookies.jpg" data-lightbox="Alice">
+					<img class="portrait" src="cupcakes/img/alice_in_wonderland_cookies.jpg" alt="alice_in_wonderland_cookies">
+				</a>
+				</div>
+			</div>
+			
+			<div class="clearfloat"></div>
+			
+		</div>
+		<div class="break"></div>
+		<!--Ice Cream Theme-->
+		<div class="pastel_purple_background">
+			<h2>Ice Cream Theme</h2>
+			<h2>Sugar Cookies and Cake Pops</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/ice_cream_cover.jpg" data-lightbox="ice_cream">
+					<img class="portrait" src="cupcakes/img/ice_cream_cover.jpg" alt="ice_cream_cover">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal">
+				<a href="cupcakes/img/ice_cream_sugar_cookies.jpg" data-lightbox="ice_cream">
+					<img class="portrait" src="cupcakes/img/ice_cream_sugar_cookies.jpg" alt="ice_cream_sugar_cookies">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal">
+				<a href="cupcakes/img/ice_cream_cake_pops.jpg" data-lightbox="ice_cream">
+					<img class="portrait" src="cupcakes/img/ice_cream_cake_pops.jpg" alt="ice_cream_cake_pops">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+
+			<div class="floatleft"><p>Ice Cream Sugar Cookies</p></div>
+			<div class="floatleft"><p>Ice Cream Cake Pops</p></div>
+
+			<div class="clearfloat"></div>
+		</div>
+		<div class="flexbreak"></div>
+		<!--Chanel Theme-->
+		<div class="pastel_pink_background">
+			<h2>Chanel Theme</h2>
+			<h2>Sugar Cookies</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="themed_treats/img/chanel/chanel_top.jpg" data-lightbox="chanel">
+					<img class="portrait" src="themed_treats/img/chanel/chanel_top.jpg" alt="chanel_top">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="themed_treats/img/chanel/chanel_bottom.jpg" data-lightbox="chanel">
+					<img class="portrait" src="themed_treats/img/chanel/chanel_bottom.jpg" alt="chanel_bottom">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+		<div class="break"></div>
+		<!--Baby Blue and Oreo cakesicles and Cake Pops-->
+		<div class="pastel_tropicalblue_background">
+			<h2>Baby Blue and Oreo</h2>
+			<h2>cakesicles and Cake Pops</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/Cakesicles.jpg" data-lightbox="Cakesicles">
+					<img class="portrait" src="cupcakes/img/Cakesicles.jpg" alt="Cakesicles">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal">
+				<a href="cupcakes/img/cake_pops_cover.jpg" data-lightbox="Cakesicles">
+					<img class="portrait" src="cupcakes/img/cake_pops_cover.jpg" alt="cake_pops_cover">
+				</a>
+				</div>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_horizontal">
+				<a href="cupcakes/img/cake_pop.jpg" data-lightbox="Cakesicles">
+					<img class="portrait" src="cupcakes/img/cake_pop.jpg" alt="cake_pop">
+				</a>
+				</div>
+			</div>
+
+			<div class="clearfloat"></div>
+
+			<div class="floatleft"><p>Mermaid Themed Sugar Cookies</p></div>
+			<div class="floatleft"><p>Mermaid Themed Cupcakes</p></div>
+
+			<div class="clearfloat"></div>
+		</div>
+		<div class="break"></div>
+		<!--Cat-->
+		<div class="pastel_yellow_background">
+			<h2>Cats and Dogs</h2>
+			<h2>Cakesicles And Cupcakes</h2>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/cats_and_dogs_cakescicles.jpg" data-lightbox="Cats_and_Dogs">
+					<img class="portrait" src="cupcakes/img/cats_and_dogs_cakescicles.jpg" alt="cats_and_dogs_cakescicles">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_large_horizontal">
+				<a href="cupcakes/img/cats_and_dogs_cupcakes.jpg" data-lightbox="Cats_and_Dogs">
+					<img class="portrait" src="cupcakes/img/cats_and_dogs_cupcakes.jpg" alt="cats_and_dogs_cupcakes">
+				</a>
+				</div>
+			</div>
+			<div class="clearfloat"></div>
+			<p>Cat Cupcakes</p>
+			<div class="clearfloat"></div>
+
+			
+		</div>
+		<div class="break"></div>
+<!--add miencraft section-->
+		<div class="break"></div>
+	    </div>
+    </div>
+	<div id="footer">
+		<p> Tam's Treats Inc.</p>
+	</div>
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
