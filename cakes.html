@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet" />
 	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<link href="recipes-shared.css" rel="stylesheet" />
+	<link href="search.css" rel="stylesheet" />
 	<link rel="icon" type="img/favicon.png" href="img/favicon.png">
 	<title> Tam's Treats | Cakes </title>
 	<style>
@@ -38,6 +40,7 @@
 				<li> <a href="macarons.html">Macarons</a></li>
 				<li><a href="cakes.html" class="active">Cakes</a></li>
 				<li><a href="breads.html">Breads</a></li>
+					<li><a href="savory.html">Savory</a></li>
 				<li><a href="themed_treats.html" > Themed Treats </a>
                     <ul>
                         <li><a href="cupcakes.html">Cupcakes</a></li>
@@ -55,13 +58,48 @@
 
 		<!-- Recent Cakes -->
 		<div class="pastel_blue_background">
-			<h2> Favorites </h2>
-			
+			<h2 id="favorites"> Favorites </h2>
+			<div class="clearfloat"></div>
+
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-stawberry-matcha-cake" href="cakes/img/strawberry%20matcha%20cake.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/strawberry%20matcha%20cake.jpeg" alt="stawberry_matcha_cake">
+					</a>
+				</div>
+				<p>February 2, 2026</p>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-smiski-cake" href="cakes/img/Smiski/smiski_cake.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/Smiski/smiski_cake.jpeg" alt="smiski_cake">
+					</a>
+				</div>
+				<p>November 7, 2025</p>
+			</div>
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-chocolate-cake" href="cakes/img/chocolate_cake.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/chocolate_cake.jpeg" alt="chocolate_cake">
+					</a>
+				</div>
+				<p>November 4, 2024</p>
+			</div>
+
+
+			<div class="clearfloat"></div>
+
+			<div class="floatleft"><p>Strawberry Matcha Cake</p></div>
+			<div class="floatleft"><p>Smiski Cake</p></div>
+			<div class="floatleft"><p>Chocolate Cake</p></div>
+
+			<div class="clearfloat"></div>
+
 			<!-- Row 1-->
 			 	
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/jellycat_cake.png" data-lightbox="recent_cakes">
+					<a id="cake-jellycat-cake" href="cakes/img/jellycat_cake.png" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/jellycat_cake.png" alt="jellycat_cake">
 					</a>
 					</div>
@@ -69,7 +107,7 @@
 			</div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/valentines_jellycat_cake.png" data-lightbox="recent_cakes">
+					<a id="cake-valentines-jellycat-cake" href="cakes/img/valentines_jellycat_cake.png" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/valentines_jellycat_cake.png" alt="valentines_jellycat_cake">
 					</a>
 				</div>
@@ -77,8 +115,8 @@
 			</div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/chocolate_cake.jpeg" data-lightbox="recent_cakes">
-						<img class="portrait" src="cakes/img/chocolate_cake.jpeg" alt="chocolate_cake">
+					<a id="cake-carrot-jellycat-cake" href="cakes/img/carrot_jellycat_cake.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/carrot_jellycat_cake.jpeg" alt="carrot_jellycat_cake">
 					</a>
 				</div>
 				<p>November 4, 2024</p>
@@ -89,14 +127,14 @@
 
 			<div class="floatleft"><p>Jellycat Cake</p></div>
 			<div class="floatleft"><p>Valentine's Jellycat Cake</p></div>
-			<div class="floatleft"><p>Chocolate Cake</p></div>
+			<div class="floatleft"><p>Carrot Jellycat Cake</p></div>
 
 			<div class="clearfloat"></div>
 
-			<!--Row 2-->
+			<!--Row 3-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/floral_vintage_cake.png" data-lightbox="recent_cakes">
+					<a id="cake-floral-vintage-cake" href="cakes/img/floral_vintage_cake.png" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/floral_vintage_cake.png" alt="floral_vintage_cake">
 					</a>
 				</div>
@@ -105,7 +143,7 @@
 			 	
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/delta_vintage_cake.jpeg" data-lightbox="recent_cakes">
+					<a id="cake-delta-vintage-cake" href="cakes/img/delta_vintage_cake.jpeg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/delta_vintage_cake.jpeg" alt="delta_vintage_cake">
 					</a>
 					</div>
@@ -114,7 +152,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/vintage_cake.png" data-lightbox="recent_cakes">
+					<a id="cake-vintage-cake" href="cakes/img/vintage_cake.png" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/vintage_cake.png" alt="vintage_cake">
 					</a>
 				</div>
@@ -129,9 +167,48 @@
 			<div class="floatleft"><p>Blue Vintage Cake</p></div>
 
 			<div class="clearfloat"></div>
+
+			<!--Row 4-->
+
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/minecraft.jpg" data-lightbox="recent_cakes">
+					<a id="cake-purple-pink-vintage-cake" href="cakes/img/purple_pink_vintage_cake.JPG" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/purple_pink_vintage_cake.JPG" alt="purple_pink_vintage_cake">
+					</a>
+				</div>
+				<p>September 12, 2025</p>
+			</div>
+
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-jasmine-mango-cake" href="cakes/img/jasmine_mango_cake.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/jasmine_mango_cake.jpeg" alt="jasmine_mango_cake.jpeg">
+					</a>
+				</div>
+				<p>February 6, 2026</p>
+			</div>
+
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-tiramisu" href="cakes/img/tiramisu.jpeg" data-lightbox="recent_cakes">
+						<img class="portrait" src="cakes/img/tiramisu.jpeg" alt="tiramisu.jpeg">
+					</a>
+				</div>
+				<p>Novemeber 5, 2025</p>
+			</div>
+
+
+			<div class="clearfloat"></div>
+
+			<div class="floatleft"><p>Floral Vintage Cake</p></div>
+			<div class="floatleft"><p>Jasmine Mango Cake</p></div>
+			<div class="floatleft"><p>Tiramisu Cake</p></div>
+
+			<div class="clearfloat"></div>
+
+			<div class="thumbnail_container">
+				<div class="thumbnail_square">
+					<a id="cake-minecraft" href="cakes/img/minecraft.jpg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/minecraft.jpg" alt="minecraft">
 					</a>
 					</div>
@@ -139,7 +216,7 @@
 			</div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/pressed_flower_wedding_cake.jpg" data-lightbox="recent_cakes">
+				<a id="cake-pressed-flower-wedding-cake" href="cakes/img/pressed_flower_wedding_cake.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/pressed_flower_wedding_cake.jpg" alt="pressed_flower_wedding_cake.jpg">
 				</a>
 				</div>
@@ -147,7 +224,7 @@
 			</div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/under_the_sea.jpeg" data-lightbox="recent_cakes">
+					<a id="cake-under-the-sea" href="cakes/img/under_the_sea.jpeg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/under_the_sea.jpeg" alt="under_the_sea">
 					</a>
 				</div>
@@ -166,7 +243,7 @@
 				
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/bear_star.jpg" data-lightbox="recent_cakes">
+				<a id="cake-yellow-flowers-cake" href="cakes/img/bear_star.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/bear_star.jpg" alt="yellow_flowers_cake">
 				</a>
 				</div>
@@ -175,7 +252,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/floral.jpg" data-lightbox="recent_cakes">
+					<a id="cake-floral" href="cakes/img/floral.jpg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/floral.jpg" alt="floral">
 					</a>
 				</div>
@@ -184,7 +261,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/two_tier_galaxy.jpg" data-lightbox="recent_cakes">
+				<a id="cake-yellow-flowers-cake-2" href="cakes/img/two_tier_galaxy.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/two_tier_galaxy.jpg" alt="yellow_flowers_cake">
 				</a>
 				</div>
@@ -198,7 +275,7 @@
 			<!--Row 3-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/macaron_cake_pastel_sqaure.jpg" data-lightbox="recent_cakes">
+					<a id="cake-macaron-cake-pastel-sqaure" href="cakes/img/macaron_cake_pastel_sqaure.jpg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/macaron_cake_pastel_sqaure.jpg" alt="macaron_cake_pastel_sqaure">
 					</a>
 					</div>
@@ -207,7 +284,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/genshin_cake.gif" data-lightbox="recent_cakes">
+					<a id="cake-genshin-cake" href="cakes/img/genshin_cake.gif" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/genshin_cake.gif" alt="genshin_cake">
 					</a>
 				</div>
@@ -216,7 +293,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/Chocolate_sprinkles.jpg" data-lightbox="recent_cakes">
+					<a id="cake-chocolate-sprinkles" href="cakes/img/Chocolate_sprinkles.jpg" data-lightbox="recent_cakes">
 						<img class="portrait" src="cakes/img/Chocolate_sprinkles.jpg" alt="Chocolate_sprinkles">
 					</a>
 				</div>
@@ -231,7 +308,7 @@
 			<!-- row 4-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/Taylor_swift.jpg" data-lightbox="recent_cakes">
+				<a id="cake-taylor-swift" href="cakes/img/Taylor_swift.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/Taylor_swift.jpg" alt="Taylor_Swift">
 				</a>
 				</div>
@@ -240,7 +317,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/mulan.jpg" data-lightbox="recent_cakes">
+				<a id="cake-mulan-cake" href="cakes/img/mulan.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/mulan.jpg" alt="Mulan Cake">
 				</a>
 				</div>
@@ -249,7 +326,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-				<a href="cakes/img/KFC.jpg" data-lightbox="recent_cakes">
+				<a id="cake-kfc" href="cakes/img/KFC.jpg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/KFC.jpg" alt="KFC">
 				</a>
 				</div>
@@ -266,7 +343,7 @@
 			<!-- row 5-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/butterfly_cake(long).jpeg" data-lightbox="recent_cakes">
+				<a id="cake-butterfly-cake" href="cakes/img/butterfly_cake(long).jpeg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/butterfly_cake(long).jpeg" alt="butterfly_cake">
 				</a>
 				</div>
@@ -275,7 +352,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/randy_cake.png" data-lightbox="recent_cakes">
+				<a id="cake-randy-cake" href="cakes/img/randy_cake.png" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/randy_cake.png" alt="Randy Cake">
 				</a>
 				</div>
@@ -284,7 +361,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/strawberry_cake.png" data-lightbox="recent_cakes">
+				<a id="cake-strawberry-cake" href="cakes/img/strawberry_cake.png" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/strawberry_cake.png" alt="strawberry_cake">
 				</a>
 				</div>
@@ -302,7 +379,7 @@
 			<!-- row 6-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/fruit_cake.JPG" data-lightbox="recent_cakes">
+				<a id="cake-fruit-cake" href="cakes/img/fruit_cake.JPG" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/fruit_cake.JPG" alt="Fruit Cake">
 				</a>
 				</div>
@@ -311,7 +388,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/smores_cake.jpeg" data-lightbox="recent_cakes">
+				<a id="cake-smores-cake" href="cakes/img/smores_cake.jpeg" data-lightbox="recent_cakes">
 				<img class="portrait" src="cakes/img/smores_cake.jpeg" alt="smores_cake">
 				</a>
 				</div>
@@ -321,7 +398,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cloud_cake.jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-cloud-cake" href="cakes/img/cloud_cake.jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/cloud_cake.jpeg" alt="cloud_cake">
 				</a>
 			</div>
@@ -343,11 +420,11 @@
 		<!-- Floral -->
 		
 		<div class="pastel_green_background">
-			<h2> Floral Cakes </h2>
+			<h2 id="floral-cakes"> Floral Cakes </h2>
 		
 		<div class="thumbnail_container">
 			<div class="thumbnail_large">
-				<a href="cakes/img/pressed_flower_wedding_cake_square.jpg" data-lightbox="floral">
+				<a id="cake-pressed-flower-wedding-cake-square" href="cakes/img/pressed_flower_wedding_cake_square.jpg" data-lightbox="floral">
 				<img class="portrait" src="cakes/img/pressed_flower_wedding_cake_square.jpg" alt="pressed_flower_wedding_cake_square.jpg">
 				</a>
 			</div>
@@ -356,7 +433,7 @@
 		<div class="clearfloat"></div>
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-			<a href="cakes/img/bee.jpg" data-lightbox="floral">
+			<a id="cake-bee" href="cakes/img/bee.jpg" data-lightbox="floral">
 			<img class="portrait" src="cakes/img/bee.jpg" alt="bee.jpg">
 			</a>
 			</div>
@@ -365,7 +442,7 @@
 
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-			<a href="cakes/img/mulan.jpg" data-lightbox="floral">
+			<a id="cake-mulan-cake-2" href="cakes/img/mulan.jpg" data-lightbox="floral">
 			<img class="portrait" src="cakes/img/mulan.jpg" alt="Mulan Cake">
 			</a>
 			</div>
@@ -374,7 +451,7 @@
 
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-			<a href="cakes/img/pink_rose_macaron_cake.jpg" data-lightbox="floral">
+			<a id="cake-pink-rose-macaron-cake" href="cakes/img/pink_rose_macaron_cake.jpg" data-lightbox="floral">
 			<img class="portrait" src="cakes/img/pink_rose_macaron_cake.jpg" alt="pink_rose_macaron_cake.jpg">
 			</a>
 			</div>
@@ -391,7 +468,7 @@
 		<!--Row 2 -->
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-				<a href="cakes/img/yellow_flowers_cake.jpg" data-lightbox="floral">
+				<a id="cake-yellow-flowers-cake-3" href="cakes/img/yellow_flowers_cake.jpg" data-lightbox="floral">
 					<img class="portrait" src="cakes/img/yellow_flowers_cake.jpg" alt="yellow_flowers_cake">
 				</a>
 			</div>
@@ -399,7 +476,7 @@
 		</div>
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-				<a href="cakes/img/garden_cake.JPG" data-lightbox="floral">
+				<a id="cake-garden-cake" href="cakes/img/garden_cake.JPG" data-lightbox="floral">
 					<img class="portrait" src="cakes/img/garden_cake.JPG" alt="garden_cake">
 				</a>
 			<p>June 3, 2018</p>
@@ -407,7 +484,7 @@
 		</div>
 		<div class="thumbnail_container">
 			<div class="thumbnail_fixed">
-			<a href="cakes/img/succulent_cake.jpg" data-lightbox="floral">
+			<a id="cake-succulent-cake" href="cakes/img/succulent_cake.jpg" data-lightbox="floral">
 			<img class="portrait" src="cakes/img/succulent_cake.jpg" alt="succulent_cake">
 			</a>
 			</div>
@@ -424,12 +501,12 @@
 		<div class="break"></div>
 		<!-- Fruit Cakes -->
 		<div class="pastel_pink_background">
-			<h2> Fruit Cakes </h2>
+			<h2 id="fruit-cakes"> Fruit Cakes </h2>
 	
 			<div class="clearfloat"></div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/fruit_cake.JPG" data-lightbox="fruit_cake">
+				<a id="cake-fruit-cake-2" href="cakes/img/fruit_cake.JPG" data-lightbox="fruit_cake">
 				<img class="portrait" src="cakes/img/fruit_cake.JPG" alt="fruit_cake">
 				</a>
 				</div>
@@ -438,7 +515,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/choco_cake_fruit_cake.jpeg" data-lightbox="fruit_cake">
+				<a id="cake-choco-cake-fruit-cake" href="cakes/img/choco_cake_fruit_cake.jpeg" data-lightbox="fruit_cake">
 				<img class="portrait"  src="cakes/img/choco_cake_fruit_cake.jpeg" alt="choco_cake_fruit_cake">
 				</a>
 				</div>
@@ -447,7 +524,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/chinese_style_fruit_cake.jpeg" data-lightbox="fruit_cake">
+				<a id="cake-chinese-style-fruit-cake" href="cakes/img/chinese_style_fruit_cake.jpeg" data-lightbox="fruit_cake">
 				<img class="portrait" src="cakes/img/chinese_style_fruit_cake.jpeg" alt="chinese_style_fruit_cake">
 				</a>
 				</div>
@@ -469,11 +546,11 @@
 
 		<!--Lunchbox-->
 		<div class="pastel_yellow_background">
-			<h2>Lunchbox Cakes </h2>
+			<h2 id="lunchbox-cakes">Lunchbox Cakes </h2>
 			<!--Row 1-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cloud_cake.jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-cloud-cake-2" href="cakes/img/cloud_cake.jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/cloud_cake.jpeg" alt="cloud_cake">
 				</a>
 			</div>
@@ -482,7 +559,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/dog_box_lunch_cake.jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-dog-box-lunch-cake" href="cakes/img/dog_box_lunch_cake.jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/dog_box_lunch_cake.jpeg" alt="dog_box_lunch_cake">
 				</a>
 			</div>
@@ -491,7 +568,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/duck_cake.png" data-lightbox="lunchbox_cake">
+				<a id="cake-duck-cake" href="cakes/img/duck_cake.png" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/duck_cake.png" alt="duck cake">
 				</a>
 			</div>
@@ -510,7 +587,7 @@
 			<!--row 2-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/duck_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-duck-lunchbox-cake" href="cakes/img/duck_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/duck_lunchbox_cake.jpg" alt="duck_lunchbox_cake">
 				</a>
 			</div>
@@ -519,7 +596,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/rose_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-rose-lunchbox-cake" href="cakes/img/rose_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/rose_lunchbox_cake.jpg" alt="rose lunchbox cake">
 				</a>
 			</div>
@@ -528,7 +605,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/grape_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-grape-lunchbox" href="cakes/img/grape_lunchbox_cake.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/grape_lunchbox_cake.jpg" alt="Grape Lunchbox">
 			</a>
 			</div>
@@ -545,7 +622,7 @@
 			<!--Row 3-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/korean_lunchbox/pastel_swirl.jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-lunchbox-pastel-pastel-swirl" href="cakes/img/korean_lunchbox/pastel_swirl.jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/korean_lunchbox/pastel_swirl.jpeg" alt="lunchbox_pastel pastel_swirl">
 				</a>
 			</div>
@@ -554,7 +631,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/flower_lunchbox_cake.jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-flower-lunchbox-cake" href="cakes/img/flower_lunchbox_cake.jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/flower_lunchbox_cake.jpeg" alt="flower_lunchbox_cake">
 				</a>
 			</div>
@@ -563,7 +640,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/butterfly_cake(short).jpeg" data-lightbox="lunchbox_cake">
+				<a id="cake-butterfly-cake-2" href="cakes/img/butterfly_cake(short).jpeg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/butterfly_cake(short).jpeg" alt="butterfly_cake">
 			</a>
 			</div>
@@ -580,7 +657,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/lunchbox_blueberry.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-lunchbox-blueberry" href="cakes/img/lunchbox_blueberry.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/lunchbox_blueberry.jpg" alt="lunchbox_blueberry">
 				</a>
 			</div>
@@ -589,7 +666,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/lunchbox_christmas.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-lunchbox-christmas" href="cakes/img/lunchbox_christmas.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/lunchbox_christmas.jpg" alt="lunchbox_christmas">
 				</a>
 			</div>
@@ -598,7 +675,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/lunchbox_flower.jpg" data-lightbox="lunchbox_cake">
+				<a id="cake-lunchbox-flower" href="cakes/img/lunchbox_flower.jpg" data-lightbox="lunchbox_cake">
 				<img class="portrait" src="cakes/img/lunchbox_flower.jpg" alt="lunchbox_flower">
 			</a>
 			</div>
@@ -618,10 +695,10 @@
 	
 		<!-- Cake Pop -->
 		<div class="pastel_purple_background">
-			<h2> Cake Pop </h2>
+			<h2 id="cake-pop"> Cake Pop </h2>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/butterfly_cake_pop.JPG" data-lightbox="cake_pop">
+					<a id="cake-butterfly-cake-pop" href="cakes/img/butterfly_cake_pop.JPG" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/butterfly_cake_pop.JPG" alt="butterfly_cake_pop">
 				</a>
 				</div>
@@ -630,7 +707,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/dog_cake_pop_sqaure.jpg" data-lightbox="cake_pop">
+					<a id="cake-dog-cake-pop" href="cakes/img/dog_cake_pop_sqaure.jpg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/dog_cake_pop_sqaure.jpg" alt="dog_cake_pop">
 					</a>
 				</div>
@@ -639,7 +716,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/mermaid_cake_pops.jpg" data-lightbox="cake_pop">
+				<a id="cake-mermaid-cake-pops" href="cakes/img/mermaid_cake_pops.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/mermaid_cake_pops.jpg" alt="mermaid_cake_pops">
 				</a>
 			</div>
@@ -655,7 +732,7 @@
 			<!--Pufferfish-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/pufferfish/pufferfishLeft.jpeg" data-lightbox="cake_pop">
+					<a id="cake-pufferfishleft" href="cakes/img/cakepops/pufferfish/pufferfishLeft.jpeg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/pufferfish/pufferfishLeft.jpeg" alt="pufferfishLeft">
 				</a>
 				</div>
@@ -665,7 +742,7 @@
 			
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cakepops/pufferfish/pufferfishMid.jpeg" data-lightbox="cake_pop">
+				<a id="cake-pufferfishmid" href="cakes/img/cakepops/pufferfish/pufferfishMid.jpeg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/pufferfish/pufferfishMid.jpeg" alt="pufferfishMid">
 				</a>
 			</div>
@@ -674,7 +751,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/pufferfish/pufferfishRight.jpeg" data-lightbox="cake_pop">
+					<a id="cake-pufferfishright" href="cakes/img/cakepops/pufferfish/pufferfishRight.jpeg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/cakepops/pufferfish/pufferfishRight.jpeg" alt="pufferfishRight">
 					</a>
 				</div>
@@ -690,7 +767,7 @@
 			<!--Jack and Mickey-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/jackAndMickey/mickey.jpeg" data-lightbox="cake_pop">
+					<a id="cake-halloween-mickey" href="cakes/img/cakepops/jackAndMickey/mickey.jpeg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/jackAndMickey/mickey.jpeg" alt="halloween mickey">
 				</a>
 				</div>
@@ -698,7 +775,7 @@
 			</div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cakepops/jackAndMickey/mickeyAndJack.jpeg" data-lightbox="cake_pop">
+				<a id="cake-jack-and-mickey" href="cakes/img/cakepops/jackAndMickey/mickeyAndJack.jpeg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/jackAndMickey/mickeyAndJack.jpeg" alt="Jack and Mickey">
 				</a>
 			</div>
@@ -707,7 +784,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/jackAndMickey/jack.jpeg" data-lightbox="cake_pop">
+					<a id="cake-jack" href="cakes/img/cakepops/jackAndMickey/jack.jpeg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/cakepops/jackAndMickey/jack.jpeg" alt="Jack">
 					</a>
 				</div>
@@ -723,7 +800,7 @@
 			<!--Enchanto -->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/encanto/mini.jpg" data-lightbox="cake_pop">
+					<a id="cake-encanto-mini" href="cakes/img/cakepops/encanto/mini.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/encanto/mini.jpg" alt="encanto_mini">
 				</a>
 				</div>
@@ -733,7 +810,7 @@
 			
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cakepops/encanto/cactus.jpg" data-lightbox="cake_pop">
+				<a id="cake-encanto-cactus" href="cakes/img/cakepops/encanto/cactus.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/encanto/cactus.jpg" alt="encanto_cactus">
 				</a>
 			</div>
@@ -742,7 +819,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/encanto/middle.jpg" data-lightbox="cake_pop">
+					<a id="cake-encanto-middle" href="cakes/img/cakepops/encanto/middle.jpg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/cakepops/encanto/middle.jpg" alt="encanto_middle">
 					</a>
 				</div>
@@ -759,7 +836,7 @@
 			<!--Animal Print-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/animal_print/giraffe_cake_pop.jpg" data-lightbox="cake_pop">
+					<a id="cake-giraffe" href="cakes/img/cakepops/animal_print/giraffe_cake_pop.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/animal_print/giraffe_cake_pop.jpg" alt="giraffe">
 				</a>
 				</div>
@@ -769,7 +846,7 @@
 			
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cakepops/animal_print/giraffe_zebra_cake_pops.jpg" data-lightbox="cake_pop">
+				<a id="cake-giraffe-and-cactus" href="cakes/img/cakepops/animal_print/giraffe_zebra_cake_pops.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/animal_print/giraffe_zebra_cake_pops.jpg" alt="giraffe_and_cactus">
 				</a>
 			</div>
@@ -778,7 +855,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/animal_print/zebra_cake_pop.jpg" data-lightbox="cake_pop">
+					<a id="cake-zebra" href="cakes/img/cakepops/animal_print/zebra_cake_pop.jpg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/cakepops/animal_print/zebra_cake_pop.jpg" alt="zebra">
 					</a>
 				</div>
@@ -793,7 +870,7 @@
 			<!--Starts-->
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/stars/choco.jpg" data-lightbox="cake_pop">
+					<a id="cake-choco-starts" href="cakes/img/cakepops/stars/choco.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/stars/choco.jpg" alt="choco_starts">
 				</a>
 				</div>
@@ -803,7 +880,7 @@
 			
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/cakepops/stars/mix.jpg" data-lightbox="cake_pop">
+				<a id="cake-mix" href="cakes/img/cakepops/stars/mix.jpg" data-lightbox="cake_pop">
 				<img class="portrait" src="cakes/img/cakepops/stars/mix.jpg" alt="mix">
 				</a>
 			</div>
@@ -812,7 +889,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/cakepops/stars/white_choco.jpg" data-lightbox="cake_pop">
+					<a id="cake-white-choco" href="cakes/img/cakepops/stars/white_choco.jpg" data-lightbox="cake_pop">
 					<img class="portrait" src="cakes/img/cakepops/stars/white_choco.jpg" alt="white_choco">
 					</a>
 				</div>
@@ -836,7 +913,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-					<a href="cakes/img/better_llama.jpg" data-lightbox="animal_cakes">
+					<a id="cake-better-llama" href="cakes/img/better_llama.jpg" data-lightbox="animal_cakes">
 					<img class="portrait" src="cakes/img/better_llama.jpg" alt="better_llama">
 					</a>
 				</div>
@@ -846,7 +923,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-					<a href="cakes/img/pikachu.JPG" data-lightbox="animal_cakes">
+					<a id="cake-pikachu" href="cakes/img/pikachu.JPG" data-lightbox="animal_cakes">
 					<img class="portrait" src="cakes/img/pikachu.JPG" alt="pikachu">
 					</a>
 				</div>
@@ -855,7 +932,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_fixed">
-					<a href="cakes/img/unicorn_cake.jpg" data-lightbox="animal_cakes">
+					<a id="cake-unicorn-cake" href="cakes/img/unicorn_cake.jpg" data-lightbox="animal_cakes">
 					<img class="portrait" src="cakes/img/unicorn_cake.jpg" alt="unicorn_cake">
 					</a>
 				</div>
@@ -875,10 +952,10 @@
 
 		<!-- Strawberry Cakes -->
 		<div class="pastel_pink_background">
-			<h2> Strawberry Cakes </h2>
+			<h2 id="strawberry-cakes"> Strawberry Cakes </h2>
 			<div class="thumbnail_container">
 				<div class="thumbnail_large">
-				<a href="cakes/img/strawberry_cover.jpg" data-lightbox="strawberry_cakes">
+				<a id="cake-strawberry-cover" href="cakes/img/strawberry_cover.jpg" data-lightbox="strawberry_cakes">
 				<img class="portrait" src="cakes/img/strawberry_cover.jpg" alt="strawberry_cover">
 				</a>
 				</div>
@@ -888,7 +965,7 @@
 			<div class="clearfloat"></div>
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/strawberry_cake.JPG" data-lightbox="strawberry_cakes">
+				<a id="cake-strawberry-cake-2" href="cakes/img/strawberry_cake.JPG" data-lightbox="strawberry_cakes">
 				<img class="portrait" src="cakes/img/strawberry_cake.JPG" alt="strawberry_cake">
 				</a>
 				</div>
@@ -897,7 +974,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/strawberry_shortcake.JPG" data-lightbox="strawberry_cakes">
+				<a id="cake-strawberry-shortcake" href="cakes/img/strawberry_shortcake.JPG" data-lightbox="strawberry_cakes">
 				<img class="portrait"  src="cakes/img/strawberry_shortcake.JPG" alt="strawberry_shortcake">
 				</a>
 				</div>
@@ -906,7 +983,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/mothers_day.JPG" data-lightbox="strawberry_cakes">
+				<a id="cake-mothers-day" href="cakes/img/mothers_day.JPG" data-lightbox="strawberry_cakes">
 				<img class="portrait" src="cakes/img/mothers_day.JPG" alt="mothers_day">
 				</a>
 				</div>
@@ -929,11 +1006,11 @@
 		<!-- Chocolate Cakes -->
 
 		<div class="brown">
-			<h2> Chocolate Cakes </h2>
+			<h2 id="chocolate-cakes"> Chocolate Cakes </h2>
 
 			<div class="thumbnail_container">
 			<div class="thumbnail_square">
-				<a href="cakes/img/Chocolate_Strawberry.JPG" data-lightbox="chocolate_cake">
+				<a id="cake-chocolate-strawberry" href="cakes/img/Chocolate_Strawberry.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/Chocolate_Strawberry.JPG" alt="Chocolate_Strawberry">
 				</a>
 			</div>
@@ -942,7 +1019,7 @@
 
 			<div class="thumbnail_container">
 			<div class="thumbnail_square">
-				<a href="cakes/img/ferrero_rocher_cake.JPG" data-lightbox="chocolate_cake">
+				<a id="cake-ferrero-rocher-cake" href="cakes/img/ferrero_rocher_cake.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/ferrero_rocher_cake.JPG" alt="ferrero_rocher_cake">
 				</a>
 			</div>
@@ -951,7 +1028,7 @@
 
 			<div class="thumbnail_container">
 			<div class="thumbnail_square">
-				<a href="cakes/img/choco_cake.JPG" data-lightbox="chocolate_cake">
+				<a id="cake-choco-cake" href="cakes/img/choco_cake.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/choco_cake.JPG" alt="choco_cake">
 				</a>
 			</div>
@@ -972,11 +1049,11 @@
 
 		<!-- Macaron Cakes -->
 		<div class="pastel_purple_background">
-			<h2> Macaron Cakes </h2>
+			<h2 id="macaron-cakes"> Macaron Cakes </h2>
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/mothers_day.JPG" data-lightbox="macaron_cake">
+				<a id="cake-watermelon-macaron-cake" href="cakes/img/mothers_day.JPG" data-lightbox="macaron_cake">
 					<img class="portrait" src="cakes/img/watermelon_macaron_cake.JPG" alt="watermelon_macaron_cake">
 				</a>
 				</div>
@@ -985,7 +1062,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/mothers_day.JPG" data-lightbox="macaron_cake">
+				<a id="cake-strawberry-macarons" href="cakes/img/mothers_day.JPG" data-lightbox="macaron_cake">
 					<img class="portrait" src="cakes/img/strawberry_macarons.JPG" alt="strawberry_macarons">
 				</a>
 				</div>
@@ -994,7 +1071,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/rainbow_macaron.JPG" data-lightbox="macaron_cake">
+				<a id="cake-rainbow-macaron" href="cakes/img/rainbow_macaron.JPG" data-lightbox="macaron_cake">
 					<img class="portrait" src="cakes/img/rainbow_macaron.JPG" alt="rainbow_macaron">
 				</a>
 				</div>
@@ -1012,11 +1089,11 @@
 		<div class="break"></div>
 		<!-- Shopkin Cakes -->
 		<div class="pastel_yellow_background">
-			<h2> Shopkin Cakes </h2>
+			<h2 id="shopkin-cakes"> Shopkin Cakes </h2>
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/shopkins_crown.JPG" data-lightbox="shopkins_cake">
+				<a id="cake-shopkins-crown" href="cakes/img/shopkins_crown.JPG" data-lightbox="shopkins_cake">
 				<img class="portrait" src="cakes/img/shopkins_crown.JPG" alt="shopkins_crown">
 				</a>
 			</div>
@@ -1025,7 +1102,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/shopkins_ice_cream_cake_new.jpg" data-lightbox="shopkins_cake">
+				<a id="cake-shopkins-ice-cream-cake-new" href="cakes/img/shopkins_ice_cream_cake_new.jpg" data-lightbox="shopkins_cake">
 				<img class="portrait" src="cakes/img/shopkins_ice_cream_cake_new.jpg" alt="shopkins_ice_cream_cake_new">
 				</a>
 			</div>
@@ -1034,7 +1111,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/shopkins_orginal.JPG" data-lightbox="shopkins_cake">
+				<a id="cake-shopkins-orginal" href="cakes/img/shopkins_orginal.JPG" data-lightbox="shopkins_cake">
 				<img class="portrait" src="cakes/img/shopkins_orginal.JPG" alt="shopkins_orginal">
 			</a>
 			</div>
@@ -1052,11 +1129,11 @@
 
 		<!-- Crepes Cakes -->
 		<div class="brown">
-			<h2> Crepe Cakes </h2>
+			<h2 id="crepe-cakes"> Crepe Cakes </h2>
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/oreo_crepe_cake.JPG" data-lightbox="chocolate_cake">
+					<a id="cake-oreo-crepe-cake" href="cakes/img/oreo_crepe_cake.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/oreo_crepe_cake.JPG" alt="oreo_crepe_cake">
 					</a>
 				</div>
@@ -1064,7 +1141,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/ferrero_rocher_cake.JPG" data-lightbox="chocolate_cake">
+					<a id="cake-ferrero-rocher-cake-2" href="cakes/img/ferrero_rocher_cake.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/ferrero_rocher_cake.JPG" alt="ferrero_rocher_cake">
 					</a>
 				</div>
@@ -1072,7 +1149,7 @@
 			
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/mom_bday.JPG" data-lightbox="chocolate_cake">
+					<a id="cake-mom-bday" href="cakes/img/mom_bday.JPG" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/mom_bday.JPG" alt="mom_bday">
 					</a>
 				</div>
@@ -1082,7 +1159,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/oreo_crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
+					<a id="cake-oreo-crepe-cake-2" href="cakes/img/oreo_crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/oreo_crepe_cake_slice.jfif" alt="oreo_crepe_cake">
 					</a>
 				</div>
@@ -1091,7 +1168,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
+					<a id="cake-mom-bday-2" href="cakes/img/crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
 					<img class="portrait" src="cakes/img/crepe_cake_slice.jfif" alt="mom_bday">
 					</a>
 				</div>
@@ -1100,7 +1177,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-				<a href="cakes/img/rainbow_crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
+				<a id="cake-mom-bday-3" href="cakes/img/rainbow_crepe_cake_slice.jfif" data-lightbox="chocolate_cake">
 				<img class="portrait" src="cakes/img/rainbow_crepe_cake_slice.jfif" alt="mom_bday">
 			</a>
 			</div>
@@ -1116,11 +1193,11 @@
 		<div class="break"></div>
 		<!--Custom-->
 		<div class="pastel_tropicalblue_background">
-			<h2> Custom Cakes </h2>
+			<h2 id="custom-cakes"> Custom Cakes </h2>
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/batman_cake.jpg" data-lightbox="custom">
+					<a id="cake-batman-cake" href="cakes/img/batman_cake.jpg" data-lightbox="custom">
 					<img class="portrait" src="cakes/img/batman_cake.jpg" alt="batman_cake">
 					</a>
 				</div>
@@ -1130,7 +1207,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/Promise_of_the_neverland_cake.jpg" data-lightbox="custom">
+					<a id="cake-promise-of-the-neverland-cake" href="cakes/img/Promise_of_the_neverland_cake.jpg" data-lightbox="custom">
 					<img class="portrait" src="cakes/img/Promise_of_the_neverland_cake.jpg" alt="Promise_of_the_neverland_cake">
 					</a>
 				</div>
@@ -1139,7 +1216,7 @@
 
 			<div class="thumbnail_container">
 				<div class="thumbnail_square">
-					<a href="cakes/img/beatles_cake.png" data-lightbox="custom">
+					<a id="cake-beatles-cake" href="cakes/img/beatles_cake.png" data-lightbox="custom">
 					<img class="portrait" src="cakes/img/beatles_cake.png" alt="beatles_cake">
 					</a>
 				</div>
@@ -1157,13 +1234,13 @@
 
 		<div class="break"></div>
 		<div class="pastel_green_background">
-			<h2>Archive</h2>
+			<h2 id="archive">Archive</h2>
 		<!-- Archieved -->
 		<!--Row 1
 		
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/vegan_coconut_mango_cake.JPG" data-lightbox="Archieved">
+			<a id="cake-vegan-coconut-mango-cake" href="cakes/img/vegan_coconut_mango_cake.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/vegan_coconut_mango_cake.JPG" alt="vegan_coconut_mango_cake">
 			</a>
 			</div>
@@ -1172,7 +1249,7 @@
 		
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/july_fourth_cake.JPG" data-lightbox="Archieved">
+			<a id="cake-july-fourth-cake" href="cakes/img/july_fourth_cake.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/july_fourth_cake.JPG" alt="july_fourth_cake">
 			</a>
 			</div>
@@ -1181,7 +1258,7 @@
 
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/garden_cake_square.jpg" data-lightbox="Archieved">
+			<a id="cake-garden-cake-2" href="cakes/img/garden_cake_square.jpg" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/garden_cake_square.jpg" alt="garden_cake">
 			</a>
 			</div>
@@ -1197,7 +1274,7 @@
 		<!--Row 2-->
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/vegan_coconut_mango_cake.JPG" data-lightbox="Archieved">
+			<a id="cake-vegan-coconut-mango-cake-2" href="cakes/img/vegan_coconut_mango_cake.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/vegan_coconut_mango_cake.JPG" alt="vegan_coconut_mango_cake">
 			</a>
 			</div>
@@ -1206,7 +1283,7 @@
 		
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/july_fourth_cake.JPG" data-lightbox="Archieved">
+			<a id="cake-july-fourth-cake-2" href="cakes/img/july_fourth_cake.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/july_fourth_cake.JPG" alt="july_fourth_cake">
 			</a>
 			</div>
@@ -1215,7 +1292,7 @@
 
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/garden_cake_square.jpg" data-lightbox="Archieved">
+			<a id="cake-garden-cake-3" href="cakes/img/garden_cake_square.jpg" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/garden_cake_square.jpg" alt="garden_cake">
 			</a>
 			</div>
@@ -1231,7 +1308,7 @@
 		<!--Row 3-->
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/minecraft_pig.JPG" data-lightbox="Archieved">
+			<a id="cake-minecraft-pig" href="cakes/img/minecraft_pig.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/minecraft_pig.JPG" alt="minecraft_pig">
 			</a>
 			</div>
@@ -1239,7 +1316,7 @@
 		</div>
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/japanese_cotton_chese_cake.JPG" data-lightbox="Archieved">
+			<a id="cake-japanese-cotton-chese-cake" href="cakes/img/japanese_cotton_chese_cake.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/japanese_cotton_chese_cake.JPG" alt="japanese_cotton_chese_cake">
 			</a>
 			</div>
@@ -1247,7 +1324,7 @@
 		</div>
 		<div class="thumbnail_container">
 			<div class="thumbnail_square">
-			<a href="cakes/img/dad_bday.JPG" data-lightbox="Archieved">
+			<a id="cake-dad-bday" href="cakes/img/dad_bday.JPG" data-lightbox="Archieved">
 				<img class="portrait" src="cakes/img/dad_bday.JPG" alt="dad_bday">
 			</a>
 			</div>
@@ -1269,5 +1346,9 @@
 	</div>
 	<!--Jquery-->
 	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<script src="recipes-data.js"></script>
+	<script src="recipes-modal.js"></script>
+	<script src="gallery-index.js"></script>
+	<script src="search.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="baking treats">
+	<meta name="keywords" content="HTML,CSS,Baking,tams_treatsss,linda,tams,macarons,cakes,cupcakes,cookies,recipes">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cutive&family=Oooh+Baby&family=Ribeye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" />
+	<link href="recipes-shared.css" rel="stylesheet" />
+	<link href="search.css" rel="stylesheet" />
+	<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+	<title> Tam's Treats | Recipes </title>
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="img/logo.png" alt="logo">
+		<p><a href="index.html"> Tam's Treats </a> </p>
+		<div id="nav">
+			<ul>
+				<li> <a href="macarons.html">Macarons</a></li>
+				<li><a href="cakes.html">Cakes</a></li>
+				<li><a href="breads.html">Breads</a></li>
+				<li><a href="savory.html">Savory</a></li>
+				<li><a href="themed_treats.html" > Themed Treats </a>
+                    <ul>
+                        <li><a href="cupcakes.html">Cupcakes</a></li>
+						<li><a href="sugar_cookies.html">Sugar Cookies</a></li>
+						<li><a href="others.html">Others</a></li>
+                    </ul>
+                </li>
+				<li><a href="about_me.html">About Me </a> <li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+		<h2> Recipes </h2>
+	</div>
+	<div id="container">
+
+		<div class="tab_buttons">
+			<button class="tab_btn active_tab" onclick="showTab('bread', this)">Bread</button>
+			<button class="tab_btn" onclick="showTab('dessert', this)">Dessert</button>
+			<button class="tab_btn" onclick="showTab('savory', this)">Savory</button>
+		</div>
+
+		<div id="tab_bread" class="tab_content active_content"></div>
+		<div id="tab_dessert" class="tab_content"></div>
+		<div id="tab_savory" class="tab_content"></div>
+
+	</div>
+
+	<script src="recipes-data.js"></script>
+	<script src="recipes-modal.js"></script>
+	<script src="gallery-index.js"></script>
+	<script src="search.js"></script>
+
+	<div id="footer">
+		<p> Tam's Treats Inc.</p>
+	</div>
+</body>
+</html>

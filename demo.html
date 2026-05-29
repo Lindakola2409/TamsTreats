@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Modernization demo for Tam's Treats">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Raleway:wght@300;400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="recipes-shared.css" rel="stylesheet" />
+	<link href="search.css" rel="stylesheet" />
+	<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+	<title>Tam's Treats | Breads (Modern Demo)</title>
+	<style>
+		/* === Reset / base === */
+		*, *::before, *::after { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: 'Inter', 'Raleway', system-ui, sans-serif;
+			color: #2a2a2a;
+			background: #fdfaf6;
+			-webkit-font-smoothing: antialiased;
+			line-height: 1.5;
+		}
+		a { color: inherit; text-decoration: none; }
+
+		/* === Demo banner (so you can tell this is the demo) === */
+		.demo_banner {
+			background: linear-gradient(90deg, #00165f, #2a3a8c);
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+		}
+		.demo_banner a { text-decoration: underline; opacity: 0.85; }
+		.demo_banner a:hover { opacity: 1; }
+
+		/* === Header / nav (sticky, slim, responsive) === */
+		.site_header {
+			position: sticky;
+			top: 0;
+			z-index: 50;
+			background: rgba(253, 250, 246, 0.92);
+			backdrop-filter: saturate(180%) blur(10px);
+			-webkit-backdrop-filter: saturate(180%) blur(10px);
+			border-bottom: 1px solid rgba(0,0,0,0.06);
+		}
+		.header_inner {
+			max-width: 1280px;
+			margin: 0 auto;
+			padding: 14px 24px;
+			display: flex;
+			align-items: center;
+			gap: 24px;
+		}
+		.brand {
+			font-family: 'Ribeye', cursive;
+			font-size: 22px;
+			color: #00165f;
+			white-space: nowrap;
+		}
+		.brand img { height: 32px; vertical-align: middle; margin-right: 8px; }
+		.site_nav {
+			display: flex;
+			gap: 4px;
+			margin-left: auto;
+			flex-wrap: wrap;
+		}
+		.site_nav a {
+			padding: 8px 14px;
+			border-radius: 999px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #444;
+			transition: background 0.2s ease, color 0.2s ease;
+		}
+		.site_nav a:hover { background: #f0f1f8; color: #00165f; }
+		.site_nav a.active { background: #00165f; color: white; }
+
+		/* === Hero === */
+		.hero {
+			max-width: 1280px;
+			margin: 0 auto;
+			padding: 56px 24px 24px;
+		}
+		.hero h1 {
+			font-family: 'Ribeye', cursive;
+			font-size: clamp(40px, 7vw, 88px);
+			margin: 0 0 8px;
+			color: #2a2a2a;
+			letter-spacing: -1px;
+		}
+		.hero p {
+			font-size: clamp(15px, 1.6vw, 18px);
+			color: #777;
+			max-width: 640px;
+			margin: 0;
+		}
+
+		/* === Gallery grid === */
+		.gallery {
+			max-width: 1280px;
+			margin: 0 auto;
+			padding: 32px 24px 80px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 24px;
+		}
+		.bake_card {
+			background: white;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
+			display: flex;
+			flex-direction: column;
+		}
+		.bake_card:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.06), 0 18px 40px rgba(0,0,0,0.10);
+		}
+		.bake_card.clickable { cursor: pointer; }
+		.bake_card_image {
+			aspect-ratio: 4 / 3;
+			overflow: hidden;
+			background: #f0f0f0;
+		}
+		.bake_card_image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: transform 0.5s ease;
+		}
+		.bake_card:hover .bake_card_image img { transform: scale(1.04); }
+		.bake_card_body {
+			padding: 18px 20px 22px;
+		}
+		.bake_card_title {
+			font-size: 18px;
+			font-weight: 600;
+			margin: 0 0 6px;
+			color: #1a1a1a;
+		}
+		.bake_card_meta {
+			font-size: 13px;
+			color: #888;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.recipe_pill {
+			display: inline-block;
+			background: #FFDFBE;
+			color: #7a3a00;
+			font-size: 11px;
+			font-weight: 700;
+			padding: 3px 9px;
+			border-radius: 999px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+		}
+
+		/* === Section heading between groups (still possible but optional) === */
+		.section_heading {
+			max-width: 1280px;
+			margin: 40px auto 0;
+			padding: 0 24px;
+			font-size: 22px;
+			font-weight: 600;
+			color: #444;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.section_heading::after {
+			content: '';
+			flex: 1;
+			height: 1px;
+			background: rgba(0,0,0,0.08);
+		}
+
+		/* === Footer === */
+		.site_footer {
+			background: #2a2a2a;
+			color: #b8b8b8;
+			padding: 40px 24px;
+			text-align: center;
+			font-size: 14px;
+		}
+		.site_footer .brand_lg {
+			font-family: 'Ribeye', cursive;
+			font-size: 28px;
+			color: white;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		/* === Mobile === */
+		@media (max-width: 700px) {
+			.header_inner { flex-wrap: wrap; gap: 12px; }
+			.site_nav { width: 100%; justify-content: flex-start; gap: 0; overflow-x: auto; flex-wrap: nowrap; }
+			.site_nav::-webkit-scrollbar { display: none; }
+			.site_nav a { padding: 6px 10px; font-size: 13px; }
+			.hero { padding: 36px 20px 16px; }
+			.gallery { padding: 24px 16px 60px; gap: 16px; }
+		}
+	</style>
+</head>
+<body>
+
+	<div class="demo_banner">
+		Modern design demo &nbsp;·&nbsp; <a href="breads.html">View original breads.html</a> &nbsp;·&nbsp; resize the window to see responsiveness
+	</div>
+
+	<header class="site_header">
+		<div class="header_inner">
+			<a href="index.html" class="brand"><img src="img/logo.png" alt=""> Tam's Treats</a>
+			<nav class="site_nav">
+				<a href="macarons.html">Macarons</a>
+				<a href="cakes.html">Cakes</a>
+				<a href="breads.html" class="active">Breads</a>
+				<a href="savory.html">Savory</a>
+				<a href="themed_treats.html">Themed Treats</a>
+				<a href="recipes.html">Recipes</a>
+				<a href="about_me.html">About</a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero">
+		<h1>Breads</h1>
+		<p>Soft milk buns, salt-buttered shio pan, mantou — all hand-shaped at home. Click any card with a recipe pill to see the full recipe.</p>
+	</section>
+
+	<div class="gallery">
+
+		<!-- Salt bread (links to recipe) -->
+		<article class="bake_card clickable" onclick="openRecipeById('salt-bread')">
+			<div class="bake_card_image">
+				<img src="breads/img/cream_cheese_bun4.jpg" alt="salt bread placeholder — replace with salt_bread_*.jpg once converted from HEIC">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Salt Bread (Shio Pan)</h3>
+				<div class="bake_card_meta">
+					<span class="recipe_pill">Recipe</span>
+					<span>Makes 12 rolls</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Pineapple Buns -->
+		<article class="bake_card">
+			<div class="bake_card_image">
+				<img src="breads/img/pineapple_bun1.jpg" alt="Pineapple buns">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Pineapple Buns</h3>
+				<div class="bake_card_meta">
+					<span>Hong Kong style sweet bun</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Coffee Buns -->
+		<article class="bake_card clickable" onclick="openRecipeById('coffee-buns')">
+			<div class="bake_card_image">
+				<img src="breads/img/coffee_bun1.jpg" alt="Coffee buns">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Coffee Buns</h3>
+				<div class="bake_card_meta">
+					<span class="recipe_pill">Recipe</span>
+					<span>Makes 4 buns</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Cream Cheese Buns -->
+		<article class="bake_card clickable" onclick="openRecipeById('cream-cheese-milk-bun')">
+			<div class="bake_card_image">
+				<img src="breads/img/cream_cheese_bun5.jpg" alt="Cream cheese buns">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Cream Cheese Milk Buns</h3>
+				<div class="bake_card_meta">
+					<span class="recipe_pill">Recipe</span>
+					<span>Pillowy soft</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Mantou -->
+		<article class="bake_card">
+			<div class="bake_card_image">
+				<img src="breads/img/mantou.JPG" alt="Mantou">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Mantou</h3>
+				<div class="bake_card_meta">
+					<span>Steamed Chinese bun</span>
+				</div>
+			</div>
+		</article>
+
+		<!-- Pineapple Buns alt -->
+		<article class="bake_card">
+			<div class="bake_card_image">
+				<img src="breads/img/pineapple_bun3.jpg" alt="Pineapple buns close up">
+			</div>
+			<div class="bake_card_body">
+				<h3 class="bake_card_title">Pineapple Buns</h3>
+				<div class="bake_card_meta">
+					<span>With cookie crumble top</span>
+				</div>
+			</div>
+		</article>
+
+	</div>
+
+	<footer class="site_footer">
+		<span class="brand_lg">Tam's Treats</span>
+		Hand-baked · San Francisco
+	</footer>
+
+	<script src="recipes-data.js"></script>
+	<script src="recipes-modal.js"></script>
+	<script src="gallery-index.js"></script>
+	<script src="search.js"></script>
+</body>
+</html>

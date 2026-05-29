@@ -1,0 +1,289 @@
+/* Shared styles for recipe cards + modal. Used by recipes.html and breads.html. */
+
+.tab_buttons{
+	text-align: center;
+	margin: 30px 0px;
+}
+.tab_btn{
+	font-family: 'Ribeye', cursive;
+	font-size: 24px;
+	padding: 12px 35px;
+	margin: 0px 8px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: #f0f0f0;
+	color: #333;
+	transition: all 0.3s ease;
+}
+.tab_btn:hover{
+	background-color: #D0D5F7;
+	transform: translateY(-2px);
+}
+.tab_btn.active_tab{
+	background-color: #00165f;
+	color: white;
+	box-shadow: 0 4px 15px rgba(0, 22, 95, 0.3);
+}
+.tab_content{
+	display: none;
+}
+.tab_content.active_content{
+	display: block;
+}
+.card_grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 10px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.recipe_card{
+	background: white;
+	border-radius: 16px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	overflow: hidden;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.recipe_card:hover{
+	transform: translateY(-4px);
+	box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.card_header{
+	padding: 25px 25px 20px;
+	text-align: center;
+}
+.card_header h3{
+	font-family: 'Ribeye', cursive;
+	font-size: 22px;
+	margin: 0;
+	color: #333;
+}
+.card_header .card_tag{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #888;
+	margin-top: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.modal_overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+.modal_overlay.show{
+	display: flex;
+}
+.modal_content{
+	background: white;
+	border-radius: 20px;
+	max-width: 700px;
+	width: 100%;
+	max-height: 85vh;
+	overflow-y: auto;
+	padding: 40px;
+	position: relative;
+	box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+	text-align: left;
+}
+.modal_close{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+	color: #999;
+	background: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+.modal_close:hover{
+	color: #333;
+}
+.modal_content h3{
+	font-family: 'Ribeye', cursive;
+	font-size: 28px;
+	margin: 0 0 5px;
+	color: #333;
+	text-align: left;
+}
+.modal_content .card_tag{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #888;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.modal_content h4{
+	font-family: 'Ribeye', cursive;
+	font-size: 20px;
+	margin: 20px 0 8px;
+	color: #444;
+}
+.modal_content p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	margin: 5px 0 10px;
+}
+.modal_content ul{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	line-height: 1.8;
+	padding-left: 25px;
+	list-style-position: outside;
+	margin-left: 0;
+}
+.modal_content ol{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	line-height: 1.8;
+	padding-left: 25px;
+	list-style-position: outside;
+	margin-left: 0;
+}
+.card_color_bar{
+	height: 5px;
+	width: 100%;
+}
+.color_purple{ background: #D0D5F7; }
+.color_pink{ background: #F6DAE4; }
+.color_yellow{ background: #FFFFB1; }
+.color_blue{ background: #D4F0F7; }
+.color_orange{ background: #FFDFBE; }
+.color_green{ background: #DEFDE0; }
+.color_brown{ background: #C6AB80; }
+.scale_input{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	width: 70px;
+	padding: 5px 10px;
+	border-radius: 8px;
+	border: 2px solid #D0D5F7;
+	text-align: center;
+}
+.savory_subcat_heading{
+	text-align: left;
+	margin: 30px 10px 10px;
+	font-family: 'Ribeye', cursive;
+	font-size: 28px;
+}
+.savory_subcat_heading.first{
+	margin-top: 20px;
+}
+/* Clickable caption/heading links — for items that have a recipe */
+.recipe_link{
+	cursor: pointer;
+	color: #00165f;
+	border-bottom: 2px solid transparent;
+	transition: border-color 0.2s ease, color 0.2s ease;
+	padding-bottom: 1px;
+	font-weight: bold;
+}
+.recipe_link:hover{
+	border-bottom-color: #00165f;
+	color: #2a3a8c;
+}
+.recipe_carousel{
+	margin: 15px 0 25px;
+	background: #f9f9f9;
+	border-radius: 12px;
+	padding: 15px;
+}
+.carousel_header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.carousel_label{
+	font-family: 'Ribeye', cursive;
+	font-size: 20px;
+	color: #444;
+}
+.carousel_toggle{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	background: #00165f;
+	color: white;
+	border: none;
+	padding: 6px 16px;
+	border-radius: 20px;
+	cursor: pointer;
+	letter-spacing: 0.5px;
+}
+.carousel_toggle:hover{
+	background: #001a7a;
+}
+.carousel_body{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 280px;
+}
+.carousel_image{
+	max-width: 100%;
+	max-height: 380px;
+	border-radius: 10px;
+	object-fit: contain;
+	display: block;
+}
+.carousel_nav{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 22, 95, 0.85);
+	color: white;
+	border: none;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: bold;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	line-height: 1;
+}
+.carousel_nav.prev{ left: 8px; }
+.carousel_nav.next{ right: 8px; }
+.carousel_nav:hover{ background: rgba(0, 22, 95, 1); }
+.carousel_counter{
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #888;
+	font-weight: bold;
+}
+.recipe_carousel.collapsed .carousel_body,
+.recipe_carousel.collapsed .carousel_counter{
+	display: none;
+}

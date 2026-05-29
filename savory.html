@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="baking treats">
+	<meta name="keywords" content="HTML,CSS,Baking,tams_treatsss,linda,tams,macarons,cakes,cupcakes,cookies,savory">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cutive&family=Oooh+Baby&family=Ribeye&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" />
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<link href="recipes-shared.css" rel="stylesheet" />
+	<link href="search.css" rel="stylesheet" />
+	<link rel="icon" type="img/favicon.png" href="img/favicon.png">
+	<title> Tam's Treats | Savory </title>
+	<style>
+		.thumbnail_image{
+			width: 440px;
+			height: auto;
+			float: left;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 20px;
+		}
+		/* Hover-reveal date pill on each savory thumbnail */
+		#container > a[data-date]{
+			position: relative;
+			display: block;
+			float: left;
+		}
+		#container > a[data-date]::after{
+			content: attr(data-date);
+			position: absolute;
+			bottom: 24px;
+			left: 50%;
+			transform: translateX(-50%) translateY(8px);
+			background: rgba(0, 22, 95, 0.88);
+			color: white;
+			padding: 7px 16px;
+			border-radius: 999px;
+			font-family: 'Raleway', sans-serif;
+			font-size: 13px;
+			font-weight: bold;
+			letter-spacing: 0.4px;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.2s ease, transform 0.2s ease;
+			white-space: nowrap;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+		}
+		#container > a[data-date]:hover::after{
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="img/logo.png" alt="logo">
+		<p><a href="index.html"> Tam's Treats </a> </p>
+		<div id="nav">
+			<ul>
+				<li> <a href="macarons.html">Macarons</a></li>
+				<li><a href="cakes.html">Cakes</a></li>
+				<li><a href="breads.html">Breads</a></li>
+				<li><a href="savory.html" class="active">Savory</a></li>
+				<li><a href="themed_treats.html" > Themed Treats </a>
+					<ul>
+						<li><a href="cupcakes.html">Cupcakes</a></li>
+						<li><a href="sugar_cookies.html">Sugar Cookies</a></li>
+						<li><a href="others.html">Others</a></li>
+					</ul>
+				</li>
+				<li><a href="about_me.html" >About Me </a> <li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+		<h2> Savory </h2>
+	</div>
+	<div id="container">
+
+		<!-- Row 1 -->
+		<a id="savory-galbi-tang" href="savory/img/galbi_tang.jpeg" data-date="March 3, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/galbi_tang.jpeg" alt="galbi_tang"></div>
+		</a>
+		<a id="savory-korean-chicken-noodle-soup" href="savory/img/korean_chicken_noodle_soup.jpeg" data-date="January 16, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/korean_chicken_noodle_soup.jpeg" alt="korean_chicken_noodle_soup"></div>
+		</a>
+		<a id="savory-galbi-tom-yum-bok-choy" href="savory/img/galbi_tom_yum_bok_choy.jpeg" data-date="March 11, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/galbi_tom_yum_bok_choy.jpeg" alt="galbi_tom_yum_bok_choy"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('galbi')">Galbi Tang</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('korean-chicken-noodle-soup')">Korean Chicken Noodle Soup</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('galbi')">Galbi, Tom Yum &amp; Bok Choy</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 2 -->
+		<a id="savory-steamed-fish-congee" href="savory/img/steamed_fish_and_Congee.jpeg" data-date="May 13, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/steamed_fish_and_Congee.jpeg" alt="steamed_fish_and_congee"></div>
+		</a>
+		<a id="savory-steamed-fish-galbi-tang" href="savory/img/steamed_fish_galbi_tang_bok_choy.jpeg" data-date="March 4, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/steamed_fish_galbi_tang_bok_choy.jpeg" alt="steamed_fish_galbi_tang_bok_choy"></div>
+		</a>
+		<a id="savory-steamed-fish-tom-yum" href="savory/img/steamed_fish_tom_yum_bok_choy.jpeg" data-date="April 29, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/steamed_fish_tom_yum_bok_choy.jpeg" alt="steamed_fish_tom_yum_bok_choy"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('congee')">Steamed Fish &amp; Congee</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('galbi')">Steamed Fish, Galbi Tang &amp; Bok Choy</a></p></div>
+		<div class="floatleft"><p>Steamed Fish, Tom Yum &amp; Bok Choy</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 3 -->
+		<a id="savory-steamed-fish-tomato-egg" href="savory/img/steamed_fish_tomato_egg_pickled_fish_soup.jpeg" data-date="November 13, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/steamed_fish_tomato_egg_pickled_fish_soup.jpeg" alt="steamed_fish_tomato_egg_pickled_fish_soup"></div>
+		</a>
+		<a id="savory-pickled-cabbage-fish-soup" href="savory/img/pickled_cabbage_fish_soup.jpeg" data-date="February 26, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/pickled_cabbage_fish_soup.jpeg" alt="pickled_cabbage_fish_soup"></div>
+		</a>
+		<a id="savory-ginger-scallion-chicken" href="savory/img/ginger_scallion_chicken.jpeg" data-date="April 30, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/ginger_scallion_chicken.jpeg" alt="ginger_scallion_chicken"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('tomato-eggs')">Steamed Fish, Tomato Egg &amp; Pickled Fish Soup</a></p></div>
+		<div class="floatleft"><p>Pickled Cabbage Fish Soup</p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('ginger-scallion-chicken')">Pour Over Ginger Scallion Chicken</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 4 -->
+		<a id="savory-tomato-egg-korean-somen" href="savory/img/tomato_egg_korean_somen.jpeg" data-date="May 2, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/tomato_egg_korean_somen.jpeg" alt="tomato_egg_korean_somen"></div>
+		</a>
+		<a id="savory-tomato-egg-noodles" href="savory/img/tomato_egg_noodles_with_bok_choy.jpeg" data-date="April 7, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/tomato_egg_noodles_with_bok_choy.jpeg" alt="tomato_egg_noodles_with_bok_choy"></div>
+		</a>
+		<a id="savory-scallop-noodles" href="savory/img/Scallop_noodles_with_Apple_salad.jpeg" data-date="April 15, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/Scallop_noodles_with_Apple_salad.jpeg" alt="scallop_noodles_with_apple_salad"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('tomato-eggs')">Tomato Egg Korean Somen</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('tomato-eggs')">Tomato Egg Noodles with Bok Choy</a></p></div>
+		<div class="floatleft"><p>Scallop Noodles with Apple Salad</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 5 -->
+		<a id="savory-singaporean-crab" href="savory/img/Singaporean_crab%3F.jpeg" data-date="February 8, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/Singaporean_crab%3F.jpeg" alt="singaporean_crab"></div>
+		</a>
+		<a id="savory-potato-tacos" href="savory/img/potato_tacos.jpeg" data-date="May 12, 2026" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/potato_tacos.jpeg" alt="potato_tacos"></div>
+		</a>
+		<a id="savory-avocado-toast" href="savory/img/avocado_toast.jpeg" data-date="December 7, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/avocado_toast.jpeg" alt="avocado_toast"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Singaporean Crab</p></div>
+		<div class="floatleft"><p>Potato Tacos</p></div>
+		<div class="floatleft"><p>Avocado Toast</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 6 -->
+		<a id="savory-spam-musubi-pyramid" href="savory/img/spam_musubi_pyramid.jpeg" data-date="November 13, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/spam_musubi_pyramid.jpeg" alt="spam_musubi_pyramid"></div>
+		</a>
+		<a id="savory-spam-musubi-stacked" href="savory/img/spam_musubi_stacked.jpeg" data-date="November 13, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/spam_musubi_stacked.jpeg" alt="spam_musubi_stacked"></div>
+		</a>
+		<a id="savory-japchae" href="savory/img/japchae.jpeg" data-date="October 26, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/japchae.jpeg" alt="japchae"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('spam-musubi')">Spam Musubi Pyramid</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('spam-musubi')">Spam Musubi Stacked</a></p></div>
+		<div class="floatleft"><p>Japchae</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 7 -->
+		<a id="savory-kimchi-butter-udon" href="savory/img/kimchi_butter_udon.jpeg" data-date="October 17, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/kimchi_butter_udon.jpeg" alt="kimchi_butter_udon"></div>
+		</a>
+		<a id="savory-mapo-tofu" href="savory/img/mapo_tofu.jpeg" data-date="October 17, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/mapo_tofu.jpeg" alt="mapo_tofu"></div>
+		</a>
+		<a id="savory-sundubu-bok-choy" href="savory/img/sundubu_bok_choy.jpeg" data-date="September 20, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/sundubu_bok_choy.jpeg" alt="sundubu_bok_choy"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('miso-butter-kimchi-udon')">Kimchi Butter Udon</a></p></div>
+		<div class="floatleft"><p>Mapo Tofu</p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('soondubu')">Sundubu &amp; Bok Choy</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 8 -->
+		<a id="savory-korean-cold-noodles" href="savory/img/korean_cold_noodle.jpg" data-date="November 28, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/korean_cold_noodle.jpg" alt="korean_cold_noodle"></div>
+		</a>
+		<a id="savory-noodles-dumplings-banchan" href="savory/img/noodles_dumpling_soybean_sprout_cucumber_banchan.jpeg" data-date="March 4, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/noodles_dumpling_soybean_sprout_cucumber_banchan.jpeg" alt="noodles_dumpling_banchan"></div>
+		</a>
+		<a id="savory-fried-rice-bok-choy" href="savory/img/fried_rice_bok_choy.jpeg" data-date="September 24, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/fried_rice_bok_choy.jpeg" alt="fried_rice_bok_choy"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Korean Cold Noodles</p></div>
+		<div class="floatleft"><p>Noodles, Dumplings &amp; Banchan</p></div>
+		<div class="floatleft"><p>Fried Rice &amp; Bok Choy</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 9 -->
+		<a id="savory-fried-rice-dumplings" href="savory/img/fried_rice_dumplings_bok_choy_soybean_sprout_banchan_honeydew.jpeg" data-date="January 29, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/fried_rice_dumplings_bok_choy_soybean_sprout_banchan_honeydew.jpeg" alt="fried_rice_dumplings_banchan"></div>
+		</a>
+		<a id="savory-salmon-bowl" href="savory/img/salmon_bowl.jpeg" data-date="January 24, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/salmon_bowl.jpeg" alt="salmon_bowl"></div>
+		</a>
+		<a id="savory-salmon-bowl-kimchi" href="savory/img/salmon_bowl_kimchi.jpeg" data-date="February 8, 2024" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/salmon_bowl_kimchi.jpeg" alt="salmon_bowl_kimchi"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Fried Rice, Dumplings &amp; Banchan</p></div>
+		<div class="floatleft"><p>Salmon Bowl</p></div>
+		<div class="floatleft"><p>Salmon Bowl with Kimchi</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 10 -->
+		<a id="savory-salmon-bake" href="savory/img/salmon_bake.jpeg" data-date="February 12, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/salmon_bake.jpeg" alt="salmon_bake"></div>
+		</a>
+		<a id="savory-lemon-salmon-pasta" href="savory/img/lemon_salmon_pasta.jpeg" data-date="December 21, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/lemon_salmon_pasta.jpeg" alt="lemon_salmon_pasta"></div>
+		</a>
+		<a id="savory-lemon-salmon-pasta-broccoli" href="savory/img/lemon_salmon_pasta_with_broccoli.jpeg" data-date="November 14, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/lemon_salmon_pasta_with_broccoli.jpeg" alt="lemon_salmon_pasta_with_broccoli"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Salmon Bake</p></div>
+		<div class="floatleft"><p>Lemon Salmon Pasta</p></div>
+		<div class="floatleft"><p>Lemon Salmon Pasta with Broccoli</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 11 -->
+		<a id="savory-chicken-mushroom-alfredo" href="savory/img/chicken_mushroom_alfredo_spinach_pasta.jpeg" data-date="February 1, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/chicken_mushroom_alfredo_spinach_pasta.jpeg" alt="chicken_mushroom_alfredo_pasta"></div>
+		</a>
+		<a id="savory-chili-oil-egg-bok-choy" href="savory/img/chili_oil_with_egg_bok_choy.jpeg" data-date="November 19, 2024" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/chili_oil_with_egg_bok_choy.jpeg" alt="chili_oil_egg_bok_choy"></div>
+		</a>
+		<a id="savory-beef-enoki-rolls-chicken-salad" href="savory/img/beef_cabbage_enoki_rolls_shredded_costco_chicken_salad.jpeg" data-date="October 1, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/beef_cabbage_enoki_rolls_shredded_costco_chicken_salad.jpeg" alt="beef_enoki_rolls_chicken_salad"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Chicken Mushroom Alfredo Pasta</p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('chili-oil-dumpling-noodle-soup')">Chili Oil Egg &amp; Bok Choy</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('beef-enoki-rolls')">Beef Enoki Rolls</a> &amp; <a class="recipe_link" onclick="openRecipeById('shredded-chicken-salad')">Chicken Salad</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 12 -->
+		<a id="savory-pork-rolls-abc-soup" href="savory/img/pork_carrot_mushroom_rolls_with_abc_soup.jpeg" data-date="February 9, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/pork_carrot_mushroom_rolls_with_abc_soup.jpeg" alt="pork_mushroom_rolls_abc_soup"></div>
+		</a>
+		<a id="savory-stir-fry-potatoes-lotus-root" href="savory/img/stir_fry_potatoes_and_lotus_root_pour_over_chicken.jpeg" data-date="September 29, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/stir_fry_potatoes_and_lotus_root_pour_over_chicken.jpeg" alt="stir_fry_potatoes_lotus_root"></div>
+		</a>
+		<a id="savory-steamed-fish-abc-soup" href="savory/img/steamed_fish_abc_soup_korean_cucumber_banchan.jpeg" data-date="August 11, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/steamed_fish_abc_soup_korean_cucumber_banchan.jpeg" alt="steamed_fish_abc_soup"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('abc-soup')">Pork Mushroom Rolls &amp; ABC Soup</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('stir-fry-potato')">Stir Fry Potatoes</a>, <a class="recipe_link" onclick="openRecipeById('lotus-root-stir-fry')">Lotus Root</a> &amp; <a class="recipe_link" onclick="openRecipeById('ginger-scallion-chicken')">Pour Over Ginger Scallion Chicken</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('abc-soup')">Steamed Fish &amp; ABC Soup</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 13 -->
+		<a id="savory-hk-borscht-soup" href="savory/img/hong_kong_borscht_soup.jpeg" data-date="October 19, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/hong_kong_borscht_soup.jpeg" alt="hk_borscht_soup"></div>
+		</a>
+		<a id="savory-tomato-eggs-curry" href="savory/img/tomato_eggs_curry_broccoli.jpeg" data-date="December 3, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/tomato_eggs_curry_broccoli.jpeg" alt="tomato_eggs_curry_broccoli"></div>
+		</a>
+		<a id="savory-spring-rolls" href="savory/img/spring_rolls.jpeg" data-date="October 15, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/spring_rolls.jpeg" alt="spring_rolls"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('hk-borscht-soup')">HK Borscht Soup</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('tomato-eggs')">Tomato Eggs, Curry &amp; Broccoli</a></p></div>
+		<div class="floatleft"><p><a class="recipe_link" onclick="openRecipeById('fish-sauce-spring-rolls')">Spring Rolls</a></p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 14 -->
+		<a id="savory-christmas-pizza" href="savory/img/christmas_pizza.jpeg" data-date="December 5, 2023" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/christmas_pizza.jpeg" alt="christmas_pizza"></div>
+		</a>
+		<a id="savory-strawberry-nutella-crepes" href="savory/img/strawberry_nutella_crepes.jpeg" data-date="September 24, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/strawberry_nutella_crepes.jpeg" alt="strawberry_nutella_crepes"></div>
+		</a>
+		<a id="savory-avocado-toast-2" href="savory/img/avocado_toast_.jpeg" data-date="September 25, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/avocado_toast_.jpeg" alt="avocado_toast_v2"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Christmas Pizza</p></div>
+		<div class="floatleft"><p>Strawberry Nutella Crepes</p></div>
+		<div class="floatleft"><p>Avocado Toast</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Row 15 -->
+		<a id="savory-avocado-toast-3" href="savory/img/avocado_toast__.jpeg" data-date="January 16, 2025" data-lightbox="savory">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/avocado_toast__.jpeg" alt="avocado_toast_v3"></div>
+		</a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Avocado Toast</p></div>
+
+		<div class="clearfloat"></div>
+
+		<!-- Pizza Night (4 photos grouped, only main thumbnail visible) -->
+		<a id="savory-pizza-night" href="savory/img/pizza_night.jpeg" data-date="April 5, 2026" data-lightbox="pizza_night">
+			<div class="thumbnail_image"><img class="portrait" src="savory/img/pizza_night.jpeg" alt="pizza_night"></div>
+		</a>
+		<a href="savory/img/Pizza_Night_4_4_26/IMG_9344.jpeg" data-lightbox="pizza_night" style="display:none"></a>
+		<a href="savory/img/Pizza_Night_4_4_26/IMG_9348.jpeg" data-lightbox="pizza_night" style="display:none"></a>
+		<a href="savory/img/Pizza_Night_4_4_26/IMG_9351.jpeg" data-lightbox="pizza_night" style="display:none"></a>
+		<div class="clearfloat"></div>
+
+		<div class="floatleft"><p>Pizza Night (4 photos)</p></div>
+
+		<div class="clearfloat"></div>
+
+	</div>
+	<div id="footer">
+		<p> Tam's Treats Inc.</p>
+	</div>
+	<!--Jquery-->
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<script src="recipes-data.js"></script>
+	<script src="recipes-modal.js"></script>
+	<script src="gallery-index.js"></script>
+	<script src="search.js"></script>
+</body>
+</html>

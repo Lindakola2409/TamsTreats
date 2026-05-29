@@ -1,0 +1,110 @@
+/* Global search bar in the header, plus dropdown results panel. */
+
+.search_container{
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	width: 280px;
+	z-index: 200;
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+}
+.search_input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 14px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	background: white;
+	border: 2px solid #D0D5F7;
+	border-radius: 22px;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.search_input:focus{
+	border-color: #00165f;
+	box-shadow: 0 4px 14px rgba(0, 22, 95, 0.15);
+}
+.search_input::placeholder{
+	color: #999;
+	font-weight: normal;
+}
+.search_results{
+	display: none;
+	margin-top: 6px;
+	background: white;
+	border-radius: 14px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+	max-height: 420px;
+	overflow-y: auto;
+}
+.search_results.show{
+	display: block;
+}
+.search_result_item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 14px;
+	cursor: pointer;
+	border-bottom: 1px solid #f0f0f0;
+	gap: 10px;
+}
+.search_result_item:last-child{
+	border-bottom: none;
+}
+.search_result_item:hover,
+.search_result_item.active{
+	background: #f5f6ff;
+}
+.search_result_name{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.search_result_badge{
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 3px 9px;
+	border-radius: 10px;
+	background: #D0D5F7;
+	color: #00165f;
+	flex-shrink: 0;
+}
+.search_result_badge.badge_recipe{ background: #FFDFBE; color: #7a3a00; }
+.search_result_badge.badge_bread{ background: #FFFFB1; color: #6b6b00; }
+.search_result_badge.badge_cake{ background: #F6DAE4; color: #7a2244; }
+.search_result_badge.badge_macaron{ background: #D0D5F7; color: #1a2270; }
+.search_result_badge.badge_savory{ background: #DEFDE0; color: #1a5a23; }
+.search_result_badge.badge_themed{ background: #DEFDE0; color: #1a5a23; }
+.search_result_badge.badge_page{ background: #D4F0F7; color: #0d4452; }
+.search_no_results{
+	padding: 14px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #888;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1440px){
+	.search_container{ right: 15px; width: 240px; top: 20px; }
+}
+@media only screen and (max-width: 812px){
+	.search_container{
+		position: static;
+		width: auto;
+		margin: 10px 20px 0;
+	}
+}
